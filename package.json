@@ -1,0 +1,13 @@
+{
+  "name": "meet-landing-page",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR).",
+  "author": "DocForLoop",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^6.0.0",
+    "sass": "^1.81.1"
+  }
+}
