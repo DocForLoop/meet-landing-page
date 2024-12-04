@@ -1,0 +1,91 @@
+/* red-hat-display-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/assets/fonts/red-hat-display-v19-latin-500.woff2") format("woff2");
+}
+/* red-hat-display-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/assets/fonts/red-hat-display-v19-latin-900.woff2") format("woff2");
+}
+:root {
+  --ff-primary: "Red Hat Display", "Segoe UI", Tahoma, Geneva, sans-serif;
+  --fs-preset-1: clamp(2.5rem, 1.971830985915493rem + 2.253521126760563vw, 4rem);
+  --fs-preset-2: clamp(2rem, 1.823943661971831rem + 0.7511737089201878vw, 2.5rem);
+  --fs-preset-3: clamp(0.75rem, 0.6619718309859155rem + 0.3755868544600939vw, 1rem);
+  --fs-preset-4: clamp(1rem, 0.8571428571428572rem + 0.2976190476190476vw, 1.125rem);
+  --fs-preset-5: 1rem;
+  --letter-spacing-4: 0.25rem;
+  --fw-1: 500;
+  --fw-2: 900;
+}
+
+:root {
+  --clr-primary-1: hsl(192, 37%, 48%);
+  --clr-primary-2: hsl(192, 90%, 77%);
+  --clr-primary-3: hsl(268, 34%, 53%);
+  --clr-primary-4: hsl(268, 100%, 86%);
+  --clr-secondary-1: hsl(240, 21%, 20%);
+  --clr-secondary-2: hsl(240, 10%, 57%);
+  --clr-secondary-3: hsl(240, 18%, 85%);
+  --clr-secondary-4: hsl(0, 0%, 98%);
+}
+
+html {
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-primary);
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--clr-secondary-1);
+  font-weight: var(--fw-1);
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
+  font-weight: var(--fw-2);
+}
+
+p, li, figcaption {
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

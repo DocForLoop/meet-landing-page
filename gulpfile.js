@@ -5,7 +5,9 @@ const browsersync = require('browser-sync').create();
 //Compile Sass
 function scssTask() {
     return src('scss/style.scss', { sourcemaps: true})
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({
+            includePaths: ['./scss'], // Add the root SCSS directory for imports
+        }).on('error', sass.logError))
         .pipe(dest('css', {sourcemaps: '.'}));
 }
 

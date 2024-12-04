@@ -1,0 +1,31 @@
+@use './functions' as *;
+
+/* red-hat-display-500 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/fonts/red-hat-display-v19-latin-500.woff2') format('woff2');
+  }
+  
+/* red-hat-display-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/assets/fonts/red-hat-display-v19-latin-900.woff2') format('woff2');
+}
+
+:root {
+    --ff-primary: 'Red Hat Display', 'Segoe UI', Tahoma, Geneva, sans-serif;
+    --fs-preset-1: clamp(2.5rem, 1.971830985915493rem + 2.253521126760563vw, 4rem);
+    --fs-preset-2: clamp(2rem, 1.823943661971831rem + 0.7511737089201878vw, 2.5rem);
+    --fs-preset-3: clamp(0.75rem, 0.6619718309859155rem + 0.3755868544600939vw, 1rem);
+    --fs-preset-4: clamp(1rem, 0.8571428571428572rem + 0.2976190476190476vw, 1.125rem);
+    --fs-preset-5: #{rem(16)};
+    --letter-spacing-4: #{rem(4)};
+    --fw-1: 500;
+    --fw-2: 900;
+}
