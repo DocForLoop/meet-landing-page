@@ -1,4 +1,5 @@
 :root {
+    --opacity: 0.85;
     --clr-primary-1: hsl(192, 37%, 48%);
     --clr-primary-2: hsl(192, 90%, 77%);
     --clr-primary-3: hsl(268, 34%, 53%);
@@ -7,4 +8,5 @@
     --clr-secondary-2: hsl(240, 10%, 57%);
     --clr-secondary-3: hsl(240, 18%, 85%);
     --clr-secondary-4: hsl(0, 0%, 98%);
+    --clr-primary-1-alpha: hsla(192, 37%, 48%, var(--opacity));
 }

@@ -1,1 +1,57 @@
 @use 'global/functions' as *;
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+
+    &__image-wrapper {
+        align-self: stretch;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(24);
+    }
+    
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+    }
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(64);
+
+    &__decors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(16);
+        align-self: stretch;
+        /* max-width: rem(1120); */
+    }
+
+    &__image {
+        flex: 1;
+    }
+}

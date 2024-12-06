@@ -17,6 +17,7 @@ body {
     letter-spacing: 0;
     color: var(--clr-secondary-1);
     font-weight: var(--fw-1);
+    background-color: var(--clr-secondary-4);
 }
 
 h1, h2, h3 {
@@ -25,6 +26,7 @@ h1, h2, h3 {
 }
 
 p, li, figcaption {
+    color: var(--clr-secondary-2);
     text-wrap: pretty;
     max-width: 65ch;
 }
@@ -43,9 +45,9 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
-}
+} */
 
 a, a:visited, a:active {
     text-decoration: none;

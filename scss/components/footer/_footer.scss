@@ -1,1 +1,51 @@
 @use 'global/functions' as *;
+@use 'components/main';
+@use 'global/mixins' as mix;
+
+.footer {
+    text-align: center;
+    
+    &__title {
+        font-size: var(--fs-preset-2);
+        color: var(--clr-secondary-4);
+    }
+    
+    &__desc {
+        color: var(--clr-secondary-4);
+    }
+    
+    &__button {
+        @include mix.button;
+        background: var(--clr-primary-3);
+        align-self: center;
+
+        & span {
+            color: var(--clr-primary-4);
+            display: inline-block;
+            margin-left: rem(4);
+
+        }
+    }
+    
+    &__wrapper {
+        padding-inline: 32px;
+        padding-block: 64px;
+        margin-top: -(rem(28));
+        position: relative;
+        background-image: url(/assets/mobile/image-footer.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--clr-primary-1-alpha);
+            z-index: -1;
+        }
+    }
+}

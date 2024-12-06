@@ -1,1 +1,13 @@
 @use 'global/functions' as *;
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(24);
+}
+
+.features__decor2 {
+    position: relative;
+    z-index: 1;
+}

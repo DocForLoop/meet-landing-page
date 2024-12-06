@@ -1,0 +1,11 @@
+@use './functions' as *;
+
+@mixin button {
+    padding-inline: 40px;
+    padding-block: 16px;
+    border-radius: rem(29);
+    border: none;
+    color: var(--clr-secondary-4);
+    font-size: var(--fs-preset-5);
+    font-weight: var(--fw-2);
+}

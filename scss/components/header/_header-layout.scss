@@ -1,1 +1,6 @@
 @use 'global/functions' as *;
+
+.header {
+    display: flex;
+    justify-content: center;
+}
