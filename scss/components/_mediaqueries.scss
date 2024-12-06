@@ -1,0 +1,64 @@
+@use 'global/functions' as *;
+
+@media (width >= rem(767)) {
+    .hero {
+        &__content {
+            padding-bottom: 64px;
+            margin-top: rem(72);
+            
+        }
+
+        &__image {
+            transform: translateX(-50%) scale(1.08) translateY(-9px);
+        }
+
+        &__actions {
+            flex-direction: row;
+        }
+        
+    }
+
+    .features {
+        padding-top: 54px;
+
+        &__images {
+            max-width: rem(1120);
+            gap: rem(24);
+        }
+
+        &__subtitle {
+            padding-inline: 24px; 
+        }
+    }
+
+    .footer {
+        &__bg {
+            background-image: url(/assets/tablet/image-footer.jpg);
+            
+        }
+
+    }
+}
+
+@media (width >= rem(1200)) {
+    .header {
+        padding-top: 80px;
+    }
+
+    .hero {
+        padding-inline: 80px;
+        padding-block: 87px;
+        &__image-wrapper {
+            display: none;
+        }
+        &__content {
+            padding-bottom: 0;
+            padding-inline: 0;
+            margin-top: 0;
+            gap: rem(32);
+            
+        }
+
+    }
+
+}

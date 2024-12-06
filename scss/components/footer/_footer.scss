@@ -27,7 +27,10 @@
         }
     }
     
-    &__wrapper {
+    &__bg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding-inline: 32px;
         padding-block: 64px;
         margin-top: -(rem(28));

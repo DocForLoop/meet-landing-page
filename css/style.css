@@ -86,9 +86,10 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-/* h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-} */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
 a, a:visited, a:active {
   text-decoration: none;
 }
@@ -193,15 +194,14 @@ a, a:visited, a:active {
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
-}
-.hero__image-wrapper {
-  align-self: stretch;
+  text-align: center;
 }
 .hero__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  max-width: 29.375rem;
 }
 .hero__actions {
   display: flex;
@@ -231,10 +231,12 @@ a, a:visited, a:active {
   flex-wrap: wrap;
   gap: 1rem;
   align-self: stretch;
-  /* max-width: rem(1120); */
 }
 .features__image {
   flex: 1;
+}
+.features__content {
+  max-width: 31.5rem;
 }
 
 .footer {
@@ -263,7 +265,10 @@ a, a:visited, a:active {
   display: inline-block;
   margin-left: 0.25rem;
 }
-.footer__wrapper {
+.footer__bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-inline: 32px;
   padding-block: 64px;
   margin-top: -1.75rem;
@@ -273,7 +278,7 @@ a, a:visited, a:active {
   background-size: cover;
   opacity: 0.9;
 }
-.footer__wrapper::before {
+.footer__bg::before {
   content: "";
   position: absolute;
   top: 0;
@@ -289,9 +294,54 @@ a, a:visited, a:active {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  max-width: 31.5rem;
 }
 
 .features__decor2 {
   position: relative;
   z-index: 1;
+}
+
+@media (width >= 47.9375rem) {
+  .hero__content {
+    padding-bottom: 64px;
+    margin-top: 4.5rem;
+  }
+  .hero__image {
+    transform: translateX(-50%) scale(1.08) translateY(-9px);
+  }
+  .hero__actions {
+    flex-direction: row;
+  }
+  .features {
+    padding-top: 54px;
+  }
+  .features__images {
+    max-width: 70rem;
+    gap: 1.5rem;
+  }
+  .features__subtitle {
+    padding-inline: 24px;
+  }
+  .footer__bg {
+    background-image: url(/assets/tablet/image-footer.jpg);
+  }
+}
+@media (width >= 75rem) {
+  .header {
+    padding-top: 80px;
+  }
+  .hero {
+    padding-inline: 80px;
+    padding-block: 87px;
+  }
+  .hero__image-wrapper {
+    display: none;
+  }
+  .hero__content {
+    padding-bottom: 0;
+    padding-inline: 0;
+    margin-top: 0;
+    gap: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
