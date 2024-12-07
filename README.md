@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://www.frontendmentor.io/solutions/)
-- [Live Site](https://docforloop.github.io/)
+- [Solution](https://www.frontendmentor.io/solutions/meet-landing-page-with-flexbox-hKmHw0srzm)
+- [Live Site](https://docforloop.github.io/meet-landing-page/)
 
 ## My process
 
@@ -37,7 +37,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - SCSS
 - Gulp
