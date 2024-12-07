@@ -30,7 +30,7 @@
 
     .footer {
         &__bg {
-            background-image: url(/assets/tablet/image-footer.jpg);
+            background-image: url(../assets/tablet/image-footer.jpg);
             
         }
 
@@ -45,7 +45,7 @@
     .hero {
         padding-inline: 80px;
         padding-block: 87px;
-        background-image: url(/assets/desktop/image-hero-left.png), url(/assets/desktop/image-hero-right.png);
+        background-image: url(../assets/desktop/image-hero-left.png), url(../assets/desktop/image-hero-right.png);
         background-position: -(rem(30)) rem(64), calc(100% + rem(25)) rem(121);
         background-repeat: no-repeat, no-repeat;
         background-size: rem(394) rem(300), rem(394) rem(300);
@@ -84,7 +84,7 @@
         text-align: left;
 
         &__bg {
-            background-image: url(/assets/desktop/image-footer.jpg);
+            background-image: url(../assets/desktop/image-footer.jpg);
             background-size: cover;
             padding-inline: 80px;
             padding-block: 112px;

@@ -4,7 +4,7 @@
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/red-hat-display-v19-latin-500.woff2") format("woff2");
+  src: url("../assets/fonts/red-hat-display-v19-latin-500.woff2") format("woff2");
 }
 /* red-hat-display-900 - latin */
 @font-face {
@@ -12,7 +12,7 @@
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/red-hat-display-v19-latin-900.woff2") format("woff2");
+  src: url("../assets/fonts/red-hat-display-v19-latin-900.woff2") format("woff2");
 }
 :root {
   --ff-primary: "Red Hat Display", "Segoe UI", Tahoma, Geneva, sans-serif;
@@ -283,7 +283,7 @@ a, a:visited, a:active {
   padding-block: 64px;
   margin-top: -1.75rem;
   position: relative;
-  background-image: url(/assets/mobile/image-footer.jpg);
+  background-image: url(../assets/mobile/image-footer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -341,7 +341,7 @@ a, a:visited, a:active {
     padding-inline: 24px;
   }
   .footer__bg {
-    background-image: url(/assets/tablet/image-footer.jpg);
+    background-image: url(../assets/tablet/image-footer.jpg);
   }
 }
 @media (width >= 75rem) {
@@ -351,7 +351,7 @@ a, a:visited, a:active {
   .hero {
     padding-inline: 80px;
     padding-block: 87px;
-    background-image: url(/assets/desktop/image-hero-left.png), url(/assets/desktop/image-hero-right.png);
+    background-image: url(../assets/desktop/image-hero-left.png), url(../assets/desktop/image-hero-right.png);
     background-position: -1.875rem 4rem, calc(100% + 1.5625rem) 7.5625rem;
     background-repeat: no-repeat, no-repeat;
     background-size: 24.625rem 18.75rem, 24.625rem 18.75rem;
@@ -382,7 +382,7 @@ a, a:visited, a:active {
     text-align: left;
   }
   .footer__bg {
-    background-image: url(/assets/desktop/image-footer.jpg);
+    background-image: url(../assets/desktop/image-footer.jpg);
     background-size: cover;
     padding-inline: 80px;
     padding-block: 112px;
