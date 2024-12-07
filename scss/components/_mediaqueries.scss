@@ -1,6 +1,6 @@
 @use 'global/functions' as *;
 
-@media (width >= rem(767)) {
+@media (width >= em(767)) {
     .hero {
         &__content {
             padding-bottom: 64px;
@@ -37,7 +37,7 @@
     }
 }
 
-@media (width >= rem(1200)) {
+@media (width >= em(1200)) {
     .header {
         padding-top: 80px;
     }

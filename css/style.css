@@ -320,7 +320,7 @@ a, a:visited, a:active {
   z-index: 2;
 }
 
-@media (width >= 47.9375rem) {
+@media (width >= 47.9375em) {
   .hero__content {
     padding-bottom: 64px;
     margin-top: 4.5rem;
@@ -344,7 +344,7 @@ a, a:visited, a:active {
     background-image: url(../assets/tablet/image-footer.jpg);
   }
 }
-@media (width >= 75rem) {
+@media (width >= 75em) {
   .header {
     padding-top: 80px;
   }
