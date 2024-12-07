@@ -5,25 +5,22 @@
         &__content {
             padding-bottom: 64px;
             margin-top: rem(72);
-            
         }
 
         &__image {
-            transform: translateX(-50%) scale(1.08) translateY(-9px);
+            transform: translateX(-50%) scale(1.08) translateY(-(rem(9)));
         }
 
         &__actions {
             flex-direction: row;
         }
-        
     }
 
     .features {
         padding-top: 54px;
 
         &__images {
-            max-width: rem(1120);
-            gap: rem(24);
+            max-width: rem(1200);
         }
 
         &__subtitle {
@@ -44,13 +41,19 @@
     .header {
         padding-top: 80px;
     }
-
+    
     .hero {
         padding-inline: 80px;
         padding-block: 87px;
+        background-image: url(/assets/desktop/image-hero-left.png), url(/assets/desktop/image-hero-right.png);
+        background-position: -(rem(30)) rem(64), calc(100% + rem(25)) rem(121);
+        background-repeat: no-repeat, no-repeat;
+        background-size: rem(394) rem(300), rem(394) rem(300);
+        
         &__image-wrapper {
             display: none;
         }
+
         &__content {
             padding-bottom: 0;
             padding-inline: 0;
@@ -58,7 +61,54 @@
             gap: rem(32);
             
         }
-
     }
 
+    .features {
+        padding-inline: 40px;
+        padding-top: 56px;
+        padding-bottom: 72px;
+
+        &__images {
+            flex-wrap: nowrap;
+            margin-inline: auto;
+           
+        }
+        &__image {
+            width: rem(256);
+            height: rem(256);
+            
+        }
+    }
+
+    .footer {
+        text-align: left;
+
+        &__bg {
+            background-image: url(/assets/desktop/image-footer.jpg);
+            background-size: cover;
+            padding-inline: 80px;
+            padding-block: 112px;
+        }
+
+        &__wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: rem(1120);
+        }
+
+        &__title {
+            width: 12ch;
+            text-wrap: stable;
+        }
+
+        &__desc {
+            width: 30ch;
+        }
+
+        &__button {
+            align-self: flex-start;
+        }
+    }
 }

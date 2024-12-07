@@ -44,7 +44,7 @@
     &__images {
         display: flex;
         flex-wrap: wrap;
-        gap: rem(16);
+        gap: clamp(1rem, 0.647887323943662rem + 1.5023474178403755vw, 2rem);
         align-self: stretch;
     }
 

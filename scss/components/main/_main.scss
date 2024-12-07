@@ -5,7 +5,7 @@
     position: relative;
     top: 0;
     left: 50%;
-    transform: translateX(-50%) scale(1.15) translateY(-9px);
+    transform: translateX(-50%) scale(1.15) translateY(-(rem(9)));
     width: 100%;
 }
 .hero {
@@ -28,16 +28,27 @@
     
     &__button {
         @include mix.button;
+        
 
         &--cyan {
             background: var(--clr-primary-1);
-
+            
+            &:hover, 
+            &:active, 
+            &:focus {
+                background: var(--clr-hover1);
+            }
         }
 
         &--purple {
             background: var(--clr-primary-3);
             align-self: center;
 
+            &:hover, 
+            &:active, 
+            &:focus {
+                background: var(--clr-hover2);
+            }
         }
     }
     
@@ -66,9 +77,9 @@
     }
 
     &__circle {
-        outline: 1px solid var(--clr-secondary-3);
-        width: 56px;
-        height: 56px;
+        outline: rem(1) solid var(--clr-secondary-3);
+        width: rem(56);
+        height: rem(56);
         border-radius: 50%;
         background-color: var(--clr-secondary-4);
     }
