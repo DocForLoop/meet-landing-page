@@ -249,6 +249,7 @@ a, a:visited, a:active {
 }
 
 .footer {
+  position: relative;
   text-align: center;
 }
 .footer__title {
@@ -300,6 +301,28 @@ a, a:visited, a:active {
 }
 .footer__wrapper {
   z-index: 3;
+}
+.footer__attribution {
+  position: absolute;
+  z-index: 100;
+  inset-block-end: 5px;
+  inset-inline: 0;
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--clr-secondary-1);
+}
+.footer__attribution-link {
+  border-radius: 0.1875rem;
+  color: var(--clr-secondary-1);
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+.footer__attribution-link:hover, .footer__attribution-link:focus-visible {
+  color: var(--clr-secondary-4);
+}
+.footer__attribution-link:focus-visible {
+  outline: 0.1875rem solid var(--clr-secondary-4);
+  outline-offset: 0.125rem;
 }
 
 .footer__wrapper {
